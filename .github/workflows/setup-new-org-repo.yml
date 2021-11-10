@@ -12,7 +12,7 @@ on:
         default: 'john-doe'
         required: true
       org:
-        default: 'ci-cd-scripts'
+        default: 'Aman1029'
         required: true
       repo-name:
         default: 'test-1'
@@ -22,7 +22,7 @@ on:
 jobs:
   # https://docs.github.com/en/actions/learn-github-actions/reusing-workflows
   reusing-workflow:
-    uses: ci-cd-scripts/called-workflows/.github/workflows/create-org-repo.yml@main
+    uses: Aman1029/called-workflows/.github/workflows/create-org-repo.yml@main
     with:
       username: ${{ github.event.inputs.username }}
       org: ${{ github.event.inputs.org }}
